@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/capture"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#424242"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Capture Image"
+        android:layout_weight="1"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:onClick="dispatchTakePictureIntent"
+        />
+
+    <Button
+        android:id="@+id/analyze"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#424242"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:text="Analyze Image"
+        android:layout_weight="1"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:onClick="analyzeImage"
+        />
+
+</LinearLayout>
